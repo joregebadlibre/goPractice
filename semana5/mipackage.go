@@ -3,13 +3,11 @@ package main
 import (
 	"fmt"
 
-	"./codigof"
+	codigof "github.com/joregebadlibre/goPractice/semana5/codigof"
 )
 
 func main() {
 
-	var curso Curso = codigof.Curso{titulo: "Curso de Go"}
-
-	fmt.Println(curso)
-
+	curso := codigof.Curso{"Curso de Go"}
+	fmt.Println(curso.ObtenerMetodo())
 }
